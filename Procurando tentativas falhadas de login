@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "Procurando por tentativas de login falhadas nos logs:!
+grep "Failed password" /var/log/auth.log
