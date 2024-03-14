@@ -1,0 +1,9 @@
+#!/bin/bash
+log_file=$1 #exemplo: /var/log/auth.log
+limite_tentativas=$2 #exmplo: 5
+tentativas=$(grep "Failed password" "$log_file" | wc -l)
+if [ "$tentativas -ge "$limite_tentativas" ]; then
+  echo "Possível ataque de força bruta detectado."
+else
+  echo "Nenhuma atividade de força bruta detectada."
+fi
