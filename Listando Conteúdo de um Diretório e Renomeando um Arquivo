@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Listando conteúdo do diretório e renomeando um arquivo..."
+ls $pwd
+mv antigo_nome.txt novo_nome.txt
+echo "Arquivo renomeado."
