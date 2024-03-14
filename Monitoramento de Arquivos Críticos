@@ -1,0 +1,7 @@
+#!/bin/bash
+#Esse script utiliza o inotifywait para notificar qualquer alteração realizada num determinado diretório
+diretorio="/diretorio_critico"
+whiletrue; do
+changes=$(inotifywait-e modify,create,delete"$diretorio")
+echo"Alterações detectadas em: $changes"
+done
