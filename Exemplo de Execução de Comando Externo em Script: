@@ -1,0 +1,4 @@
+#!/bin/bash
+espaco_livre=$(df -h)
+echo "Espaço livre em disco:"
+echo "$espaço_livre"
