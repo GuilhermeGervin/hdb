@@ -1,0 +1,8 @@
+#!/bin/bash
+log_file=$1
+padrao_buscado=$2
+if grep -q "padrao_buscado" "log_file"; then
+  echo "Padrão suspeito encontrado em $log_file"
+else
+  echo "Nenhum padrão suspeito encontrado em $log_file"
+fi
