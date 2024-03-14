@@ -1,0 +1,4 @@
+@seta=5
+@setb=2
+@set/a“c=%a%+%b%”
+EchoOresultadoé:%c%
